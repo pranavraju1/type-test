@@ -93,8 +93,8 @@ const AccountCircle = () => {
   };
   return (
     <div>
-      <AccountCircleIcon onClick={handleMoralOpen} />
-      {user && <LogoutIcon onClick={logout}/>}
+      <AccountCircleIcon onClick={handleMoralOpen} style={{height: '70px', width: '70px', marginRight: '50px'}}/>
+      {user && <LogoutIcon onClick={logout} style={{height: '70px', width: '70px'}}/>}
       <Modal
         open={open}
         onClose={handleClose}

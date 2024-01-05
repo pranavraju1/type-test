@@ -2,8 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
+
+
 *{
   box-sizing: border-box;
+  font-family: Roboto Mono;
 }
 body{
   background: ${({theme})=>theme.background};
@@ -121,15 +124,21 @@ body{
   padding-30px;
 }
 .right-stats{
-  widht:70%;
+  widht:70% !important;
 }
+
+.right-stats > :only-child {
+  height: 300px !important;
+}
+
+
 .title{
-  font-size: 20px;
+  font-size: 40px;
   color: ${({theme})=>theme.typeBoxText};
   
 }
 .subtitle{
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .header{
@@ -184,4 +193,5 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 `;
